@@ -18,6 +18,17 @@ body {
     color: var(--font-color);
 }
 
+body > a {
+    color: var(--font-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    background: var(--header-color); 
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: var(--header-color);
 }
@@ -136,4 +147,9 @@ margin-left: 2rem;
 @keyframes fadeout {
   from {bottom: 30px; opacity: 1;}
   to {bottom: 0; opacity: 0;}
+}
+
+::selection, ::-moz-selection{
+    background-color: hotpink;
+    color: white;
 }

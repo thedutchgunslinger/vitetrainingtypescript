@@ -204,11 +204,11 @@ export default class event {
     )!.textContent = `${this.duration().toString()} minutes`;
 
     if (this.untilInDays(new Date()) < 4) {
-      daysUntil.style.background = "green";
+      daysUntil.style.background = "lightGreen";
     } else if (this.untilInDays(new Date()) < 8) {
-      daysUntil.style.background = "gold";
+      daysUntil.style.background = "navajoWhite";
     } else {
-      daysUntil.style.background = "red";
+      daysUntil.style.background = "tomato";
     }
 
     container.appendChild(event);

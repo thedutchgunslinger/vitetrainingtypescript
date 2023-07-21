@@ -43,6 +43,17 @@
       "location": "AFAS",
       "url": "",
       "id": 4
+    },
+    {
+      "type": "Workshop",
+      "title": "Naar huis gaan",
+      "description": "tijd voor weekend",
+      "date": "2023-07-21",
+      "startTime": "16:00",
+      "endTime": "16:10",
+      "location": "Houten -> amsterdam",
+      "url": "",
+      "id": 5
     }
   ]
 }
