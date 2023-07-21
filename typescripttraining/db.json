@@ -1,0 +1,48 @@
+{
+  "events": [
+    {
+      "type": "Concert",
+      "title": "LOLO",
+      "description": "Concert van de artiest LOLO",
+      "date": "2023-07-22",
+      "startTime": "19:00",
+      "endTime": "23:00",
+      "location": "Dynamo, Eindhoven",
+      "url": "",
+      "id": 1
+    },
+    {
+      "type": "Webinar",
+      "title": "build a site",
+      "description": "build your own sick website!",
+      "date": "2023-07-28",
+      "startTime": "12:00",
+      "endTime": "14:00",
+      "location": "",
+      "url": "https://nbeij.nl",
+      "id": 2
+    },
+    {
+      "type": "Hackathon",
+      "title": "CodeCafé Hackathon",
+      "description": "Hackathon van CodeCafé",
+      "date": "2023-08-21",
+      "startTime": "09:00",
+      "endTime": "17:00",
+      "location": "Utrecht",
+      "url": "",
+      "id": 3
+    },
+    {
+      "type": "Concert",
+      "title": "Machine Gun Kelly",
+      "description": "Pop Punk Concert",
+      "date": "2023-07-26",
+      "startTime": "19:00",
+      "endTime": "23:00",
+      "location": "AFAS",
+      "url": "",
+      "id": 4
+    }
+  ]
+}

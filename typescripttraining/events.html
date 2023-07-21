@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>events</title>
+ 
+    <link rel="stylesheet" href="src/main.css" />
+  </head>
+  <body>
+    <a href="/">Go Home</a>
+    <h1>Upcomming Events:</h1>
+    <div id="eventsContainer"></div>
+
+    <template id="eventTemplate">
+        <div id="eventTemplateContainer">
+
+            <div>
+                <p id="daysUntil">3</p>
+            </div>
+            <div id="eventInfo">
+                <div>
+                    <h2 id="title">event title</h2>
+                    <p id="date">event date</p>
+                    <p id="description">event Description</p>
+                    <p id="location">event Location</p>
+                </div>
+                <div>
+                    <p id="type">type</p>
+                    <p id="startTime">start time</p>
+                    <p id="endTime">endtime</p>
+                    <p id="duration">duration</p>
+                </div>
+            </div>
+        </div>
+        </template>
+        <div id="snackbar">Some text some message..</div>
+       <script src="src/loadEvents.ts" type="module"></script>
+  </body>
+</html>

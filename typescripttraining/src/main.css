@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --background: #2a2a2a;
+    --font-family: 'Asap', sans-serif;
+    --font-color: #fff;
+    --header-color: #e589b7;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--background);
+    font-family: var(--font-family);
+    color: var(--font-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--header-color);
+}
+
+input, select, button {
+    width: 600px;
+    padding: .5rem 1rem; 
+    border-radius: 5px;
+}
+
+label {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#formControll {
+       display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+input:disabled {
+    cursor: not-allowed;
+}
+
+#eventsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+#eventTemplateContainer {
+    background: black;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    display: flex;
+    width: 600px;
+}
+
+
+
+#eventTemplateContainer #daysUntil {
+    height: 100%;
+    aspect-ratio: 1/1;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#eventTemplateContainer #eventInfo {
+width: 100%;
+display: flex;
+justify-content: space-evenly;
+margin-left: 2rem;
+}
+
+#eventTemplateContainer #eventInfo div:last-child {
+    display: flex;
+    flex-direction: column;
+    /* align-items: end; */
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+    gap: .5rem;
+}
+
+#eventTemplateContainer #eventInfo div:last-child p{
+    margin: 0;
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}

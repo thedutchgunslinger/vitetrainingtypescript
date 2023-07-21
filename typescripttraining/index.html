@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/main.css">
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <a href="/events.html">Go to events</a>
+    <h1 id="title">Add Event</h1>
+    <form id="formControll" method="get">
+      <label for="eventsSelector">Event Type</label>
+      <select name="events" id="eventsSelector"></select>
+      <br> 
+      <label for="eventTitle">Event Title</label>
+      <input type="text" name="eventTitle" id="eventTitle" required/>
+      <br> 
+      <label for="eventDate">Event Date</label>
+      <input type="date" name="eventDate" id="eventDate" required/>
+      <br>
+      <label for="eventStartTime">Event Start Time</label>
+      <input type="time" name="eventTime" id="eventStartTime" required/>
+      <br>
+      <label for="eventEndTime">Event End Time</label>
+      <input type="time" name="eventTime" id="eventEndTime" required/>
+      <br>
+      <label for="eventLocation">Event Location</label>
+      <input type="text" name="eventLocation" id="eventLocation" disabled required/>
+      <br>
+      <label for="eventUrl">Event Url</label>
+      <input type="url" name="eventUrl" id="eventUrl" required>
+      <label for="eventDescription">Event Description</label>
+      <input type="text" name="eventDescription" id="eventDescription" required/>
+      <br>
+      <input id="addEventBtn" type="submit" value="Add Event">
+    </form>
+
+    <div id="snackbar">Some text some message..</div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
+
