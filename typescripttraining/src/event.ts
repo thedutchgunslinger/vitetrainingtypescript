@@ -190,6 +190,7 @@ export default class event {
       const a = document.createElement("a");
       a.textContent = this.url;
       a.setAttribute("href", this.url);
+      a.setAttribute("target", "_blank");
       event.querySelector("#location")!.appendChild(a);
       // event.querySelector("#location")!.textContent = this.url
     } else {
